@@ -1,0 +1,12 @@
+.CaloriesButtons {
+  background-color: var(--secondary-bg-color);
+  height: 14rem;
+  width: 100%;
+  padding: 8px 5px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.5rem;
+  place-items: center;
+}

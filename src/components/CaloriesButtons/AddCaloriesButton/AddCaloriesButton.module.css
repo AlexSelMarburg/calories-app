@@ -1,0 +1,18 @@
+.AddCaloriesButton {
+  height: 4.6rem;
+  width: 4.6rem;
+  border-radius: 50%;
+  letter-spacing: 1px;
+  border: none;
+  background-color: transparent;
+  border: 2px solid var(--accent-color-2);
+  color: var(--main-text-color);
+  display: grid;
+  place-items: center;
+  font-size: var(--md-fz);
+
+  &:active {
+    background-color: var(--accent-color-2);
+    color: var(--dark-text-color);
+  }
+}

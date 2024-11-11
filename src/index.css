@@ -1,0 +1,119 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --main-bg-color: #000103;
+  --secondary-bg-color: #021919;
+  --nav-bg-color: #0a0a0a;
+  --nav-btn-active-color: #673ff1;
+
+  --light-gray-color: #6c7878;
+  --accent-color: #05d67d;
+  --accent-color-2: #efcd2c;
+
+  --main-font: "Roboto", sans-serif;
+  --main-text-color: #fcfbf8;
+  --dark-text-color: #000103;
+
+  --btn-bg-color: #05d67d;
+  --btn-bg-danger-color: #e60c23;
+
+  --sm-fz: 1.5rem;
+  --md-fz: 1.8rem;
+  --lg-fz: 2rem;
+  --xl-fz: 3rem;
+}
+
+html {
+  color: var(--main-text-color);
+  font-family: var(--main-font);
+  letter-spacing: 1px;
+}
+
+body {
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #035e48;
+}
+
+h2 {
+  font-size: var(--md-fz);
+}
+
+h3 {
+  font-size: var(--sm-fz);
+}
+
+#root {
+  max-width: 38rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  > * {
+    width: 100%;
+  }
+}
+
+.page {
+  height: 100%;
+  background-color: var(--main-bg-color);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("assets/fonts/roboto-v32-latin-300.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/roboto-v32-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 400;
+  src: url("assets/fonts/roboto-v32-latin-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("assets/fonts/roboto-v32-latin-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 500;
+  src: url("assets/fonts/roboto-v32-latin-500italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("assets/fonts/roboto-v32-latin-700.woff2") format("woff2");
+}

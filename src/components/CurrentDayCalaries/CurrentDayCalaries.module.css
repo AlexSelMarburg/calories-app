@@ -1,0 +1,103 @@
+.CurrentDayCalaries {
+  background-color: var(--secondary-bg-color);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  .date {
+    padding: 0.8rem 0;
+    text-align: center;
+    color: var(--main-text-color);
+    font-weight: 400;
+    font-size: var(--sm-fz);
+  }
+
+  .caloriesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 18rem;
+    gap: 1.8rem;
+
+    .caloriesData {
+      width: 100%;
+      h3 {
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.2rem;
+        color: var(--accent-color);
+        font-weight: 400;
+      }
+
+      h2 {
+        font-weight: 400;
+        text-align: right;
+        font-size: var(--xl-fz);
+
+        &.increase {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          color: var(--accent-color-2);
+
+          span {
+            color: var(--main-text-color);
+            font-weight: 400;
+            font-size: var(--lg-fz);
+            padding-right: 0.5rem;
+          }
+        }
+
+        &.hidden {
+          color: var(--light-gray-color);
+          span {
+            color: var(--light-gray-color);
+          }
+        }
+      }
+    }
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 1rem;
+    padding: 10px;
+    width: 100%;
+
+    button {
+      flex: 1;
+      letter-spacing: 1px;
+      border: none;
+      color: var(--main-text-color);
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+      cursor: pointer;
+      font-size: var(--md-fz);
+      padding: 5px;
+      border-radius: 0.25rem;
+
+      &:nth-child(1) {
+        background-color: var(--btn-bg-danger-color);
+      }
+
+      &:nth-child(2) {
+        background-color: var(--btn-bg-color);
+      }
+
+      &:not(:disabled):active {
+        background-color: var(--accent-color-2);
+      }
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
