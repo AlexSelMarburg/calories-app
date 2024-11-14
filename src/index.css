@@ -34,7 +34,7 @@ html {
   font-family: var(--main-font);
   letter-spacing: 1px;
   overflow-x: hidden;
-  height: 100vh;
+  height: 100dvh;
 }
 
 body {
