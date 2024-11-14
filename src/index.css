@@ -33,9 +33,11 @@ html {
   color: var(--main-text-color);
   font-family: var(--main-font);
   letter-spacing: 1px;
+  overflow-x: hidden;
 }
 
 body {
+  overflow-x: hidden;
   height: 100dvh;
   display: flex;
   align-items: center;
