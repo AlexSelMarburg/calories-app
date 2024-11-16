@@ -31,7 +31,8 @@ function reducer(state, action) {
           };
         }
         // return day;
-        return { newDay: "yes" };
+        // return { newDay: "yes" };
+        return { ...day, newDay: "yes" };
       });
       console.log(updatedData);
 
