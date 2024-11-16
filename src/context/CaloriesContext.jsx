@@ -1,3 +1,4 @@
+/* eslint-disable no-case-declarations */
 /* eslint-disable react/prop-types */
 import { createContext, useContext, useReducer } from "react";
 import { getCurrentDayMonthYear } from "../helpers/utils";
@@ -21,16 +22,18 @@ function reducer(state, action) {
       };
 
     case "saveToTodaysCalories":
-      // eslint-disable-next-line no-case-declarations
+      const currentDate = getCurrentDayMonthYear(new Date());
       const updatedData = state.data.map((day) => {
-        if (day.date === getCurrentDayMonthYear(new Date())) {
+        if (day.date === currentDate) {
           return {
             ...day,
             calories: state.currentDayTotalCalories + state.temporaryCalories,
           };
         }
-        return day;
+        // return day;
+        return { newDay: "yes" };
       });
+      console.log(updatedData);
 
       localStorage.setItem("calories", JSON.stringify(updatedData));
 
