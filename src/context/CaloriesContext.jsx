@@ -30,9 +30,7 @@ function reducer(state, action) {
             calories: state.currentDayTotalCalories + state.temporaryCalories,
           };
         }
-        // return day;
-        // return { newDay: "yes" };
-        return { ...day, newDay: "yes" };
+        return day;
       });
       console.log(updatedData);
 
